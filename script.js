@@ -1,4 +1,10 @@
-// 必要な場合、インタラクティブな機能をここに追加
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("ページが読み込まれました");
+    console.log("PuzzleRunページが正常に読み込まれました。");
+
+    const form = document.querySelector("form");
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("メッセージが送信されました。ご連絡ありがとうございます！");
+        form.reset();
+    });
 });
